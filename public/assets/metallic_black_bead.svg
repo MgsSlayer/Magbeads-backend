@@ -1,0 +1,24 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="beadGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="10%" stop-color="white"/>
+      <stop offset="40%" stop-color="black"/>
+      <stop offset="80%" stop-color="gray"/>
+      <stop offset="100%" stop-color="black"/>
+    </radialGradient>
+    <radialGradient id="highlight" cx="30%" cy="30%" r="30%">
+      <stop offset="10%" stop-color="white" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="shadow" cx="50%" cy="70%" r="50%">
+      <stop offset="20%" stop-color="black" opacity="0.8"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <!-- Bead with metallic gradient -->
+  <circle cx="50" cy="50" r="30" fill="url(#beadGradient)" stroke="black" stroke-width="2"/>
+  <!-- Highlight for lighting effect -->
+  <circle cx="40" cy="40" r="10" fill="url(#highlight)" opacity="0.7"/>
+  <!-- Shadow for depth -->
+  <ellipse cx="50" cy="75" rx="25" ry="10" fill="url(#shadow)" opacity="0.5"/>
+</svg>

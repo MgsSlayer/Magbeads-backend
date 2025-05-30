@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagBeads - Product Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
+</head>
+<body>
+    <div class="container_productPage">
+        <div class="header">
+            <div class="top_banner">
+                <h1 id="banner"><a href="index.html">Mag Beads</a></h1>
+                <div id="search">
+                    <input type="text" placeholder="Search...">
+                    <i class= "fa fa-search norm_size srch"></i>
+                </div>
+                <div id="icons">
+                    <div id="cart">
+                        <a href="#"><i class="fa fa-heart norm_size" style="color: red;" ></i></a>
+                    </div>
+                    <div id="cart">
+                        <a href="#"><i class="fa fa-shopping-bag norm_size" ></i></a>
+                    </div>
+                    <div>
+                        <a href="regpage.html"><i class="fa fa-user norm_size"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <nav id="desktop-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="sub-item"><a href="#">Categories</a>
+                            <div class="sub-list" >
+                                <ol>
+                                    <li><a href="shop.html"><img src="assets/waist.jpg">Waist Beads</a></li>
+                                    <li><a href="shop.html"><img src="assets/bracelets.jpg">Bracelets</a></li>
+                                    <li><a href="shop.html"><img src="assets/necklace.jpg">Necklaces</a></li>
+                                    <li><a href="shop.html"><img src="assets/beaded_bag.jpg">Beaded Bags</a></li>
+                                    <li><a href="shop.html"><img src="assets/anklets.jpg">Anklets</a></li>
+                                    <li><a href="shop.html"><img src="assets/phone_straps.jpg">Phone Straps</a></li>
+                                </ol>
+                                <div id="bundles">
+                                    <div style="background: url('assets/banner.jpeg'); width: 12rem; height: 14rem; display: flex; justify-content: center; align-items: center; font-size: 3rem; "><p>Bundles</p></div>
+                                    <div style="background: url('assets/banner.jpeg'); width: 12rem; height: 14rem; display: flex; justify-content: center; align-items: center; font-size: 3rem; text-align: center; "><p>Custom Made</p></div>
+                                </div>
+                                <!-- <div id="promos" style="background: url('assets/banner.jpeg'); "></div> -->
+                            </div>
+                            
+                        </li>
+                        <li><a href="#">Promo's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav id="hamburger-nav">
+                    <div class="hamburger-menu">
+                      <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="menu-links">
+                        <div class="content">
+                        <ul>
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-home norm_size"></i>Home</a></li>
+                        <li id="sub_menu" onclick="toggle_Sub_menu()"><a href="#"><i class="fa fa-tags norm_size"></i>Categories<img src="assets/downward_arrow_wide.svg" id="sub_menu_arrow"></a>
+                            <div id="sub">
+                               <ul>
+                                    <li><a href="shop.html" onclick="toggleMenu()"><img src="assets/metallic_black_bead.svg">Waist Beads</a></li>
+                                    <li><a href="shop.html" onclick="toggleMenu()"><img src="assets/metallic_black_bead.svg">Bracelets</a></li>
+                                    <li><a href="shop.html" onclick="toggleMenu()"><img src="assets/metallic_black_bead.svg">Necklaces</a></li>
+                                    <li><a href="shop.html" onclick="toggleMenu()"><img src="assets/metallic_black_bead.svg">Beaded Bags</a></li>
+                                    <li><a href="shop.html" onclick="toggleMenu()"><img src="assets/metallic_black_bead.svg">Anklets</a></li>
+                                    <li><a href="shop.html" onclick="toggleMenu()"><img src="assets/metallic_black_bead.svg">Phone Straps</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-list norm_size"></i>Promo's</a></li>
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-envelope norm_size"></i>Contact Us</a></li>
+                    </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+        <div id="body_background">
+            <div id="directory"><p>Home / Shop / Product Detail </p></div>
+        </div>
+
+        <div class="main_body_productPage">
+            <div class="content">
+
+                <div class="left_main">
+                    <div id="image_container" class="image_conatiner" style="background: url('assets/item1.jpg');background-size: cover;background-position: center;"><img src="assets/item1.jpg" alt=""></div>
+                </div>
+
+                <div class="right_main">
+                    <div class="product_details">
+                        <h1 id="product_name">Product Name</h1>
+                        <span>(99 Reviews)</span>
+                    </div>
+                    <div class="product_description">
+                        <h2 id="product_id">₦3000</h2>
+                        <p id="product_desc_page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reprehenderit eaque fugit vero ipsa beatae quod, mollitia laborum, 
+                           quibusdam nam cupiditate similique aut provident atque magnam molestias aspernatur ut voluptates.
+                        </p>
+                    </div>
+                    <div class="product_specifications mt">
+                        <div class="product_specifications--ctrls">
+                            <h4>Sizes:</h4>
+                            <input type="radio" name="xlarge" >
+                            <label for="xlarge">XS</label>
+                            
+                            <input type="radio" name="large" >
+                            <label for="small">S</label>
+
+                            <input type="radio" name="medium" >
+                            <label for="medium">M</label>
+
+                            <input type="radio" name="small" >
+                            <label for="large">L</label>
+
+                            <input type="radio" name="small" >
+                            <label for="xlarge">XL</label>
+                        </div>
+                        <div class="product_specifications--ctrls">
+                            <h4>Colors:</h4>
+                            <input type="radio" name="black">
+                            <label for="black">Black</label>
+                                
+                            <input type="radio" name="white">
+                            <label for="white">White</label>
+
+                            <input type="radio" name="red">
+                            <label for="red">Red</label>
+
+                            <input type="radio" name="blue">
+                            <label for="blue">Blue</label>
+                        </div>
+                    </div>
+                    <div class="product_amount mt">
+                        <input placeholder="QNT">
+                        <button>Add to Cart</button>
+                    </div>
+                    <h4 class="product_share mt">Share on:
+                        <a href="#"><i class="fa fa-facebook" style="color: #3b5998;"></i></a>
+                        <a href="#"><i class="fa fa-twitter" style="color: #1da1f2;"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp" style="color: #25d366"></i></a>
+                    </h4>
+                    
+                </div>
+            </div>
+
+            <div class="detailed_description">
+                <nav>
+                    <ul>
+                        <li>Description</li>
+                        <li>Information</li>
+                        <li>Reviews</li>
+                    </ul>
+                </nav>
+                <div class="main_description">
+                    <h2>Product Description</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem ipsa enim nihil, illo tenetur pariatur officiis veritatis, 
+                       odio at illum iusto rerum necessitatibus quis praesentium recusandae inventore repellat suscipit. Lorem ipsum dolor sit amet consectetur 
+                       adipisicing elit. Praesentium, ea nemo rem quidem, maxime ad earum ipsa facere veritatis molestias ratione unde facilis deleniti aperiam 
+                       mollitia modi excepturi cum dolor!
+                        <br>
+                        <br>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugit deleniti similique perspiciatis neque dicta officiis incidunt atque 
+                       accusamus assumenda, esse, repudiandae sit recusandae architecto distinctio nam obcaecati, illum beatae.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer_icons">
+                    <ul>
+                        <li><img src="assets/ma_symbol.svg" alt="MasterCard" style="width: 40px;"></li>
+                        <li><img src="assets/visa-icon.svg" alt="Visa" style="width: 40px;"></li>
+                        <li><img src="assets/verve-svgrepo-com.svg" alt="Verve" style="width: 40px;"></li>
+                    </ul>
+            </div>
+    
+            <div id="footer">
+                <div id="footer_components">
+                    <div id="about_us">
+                        <h4>ABOUT MAGBEADS</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Customizations</a></li>
+                            <li><a href="#">Giving Back</a></li>
+                            <li><a href="#">Whole Sale</a></li>
+                            <li><a href="#">Return Information and Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="Help">
+                        <h4>Help & Information</h4>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Delivery & returns</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="contact_us">
+                        <h4>Contact US</h4>
+                        <ul>
+                            <li>Contact us or order by phone at +234 8012345678</li>
+                            <li>Email: <a href="#">magbeads@gmail.com</a></li>
+                            <li style="display: flex; gap: 1rem; font-size: 1rem;">Socials: 
+                                <a href="#"><i class="fa fa-facebook" style="color: #3b5998;"></i></a>
+                                <a href="#"><i class="fa fa-twitter" style="color: #1da1f2;"></i></a>
+                                <a href="#"><i class="fa fa-whatsapp" style="color: #25d366"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+    
+    </footer>
+
+    </div>
+    <script src="product_detail.js"></script>
+</body>
+</html>
