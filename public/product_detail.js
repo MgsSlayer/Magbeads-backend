@@ -16,6 +16,8 @@ const price = document.getElementById('product_id');
 const details = document.getElementById('product_desc_page');
 
 image.style.background = `url('${item.image}')`;
+image.style.backgroundSize = 'cover';
+image.style.backgroundPosition = 'center';
 name.innerHTML = `${item.name}`;
 price.innerHTML = `${item.price}`;
 details.innerHTML = `${item.description}`
