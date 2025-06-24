@@ -10,34 +10,50 @@ fetch("http://localhost:3001/products")
       const placeholderImage =
         "https://res.cloudinary.com/dbcdml0yi/image/upload/v1748306396/placeholder_vzi3ev.jpg";
       section.className = "item";
-      section.onclick = () => {
+      // section.onclick = () => {
+      //   if (item._id) {
+      //     window.location.href = `product_detail?id=${item._id}`;
+      //   } else {
+      //     alert("Product ID not found!");
+      //   }
+      // };
+
+      section.innerHTML = `
+     <div class="itm_img" style="background: url('${
+       item.image || placeholderImage
+     }');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div> 
+                                <div class="itemExtra">
+                                    <div class="desc2">
+                                        <h3>${item.name}</h3>
+                                        <h4>₦${item.price}</h4>
+                                    </div>
+                                    <button class="add_to_cart" data-id="${item._id}" data-name="${item.name}">+<i class="fa fa-shopping-cart add_Cart"></i></button>
+                                </div>
+    `;
+
+      Array.from(items).forEach((container) => {
+        const clone = section.cloneNode(true);
+        const click_image = clone.querySelector('.itm_img');
+        if(click_image){
+    click_image.onclick = () => {
         if (item._id) {
           window.location.href = `product_detail?id=${item._id}`;
         } else {
           alert("Product ID not found!");
         }
       };
+  }
 
-      section.innerHTML = `
-     <div class="itm_img" style="background: url('${
-       item.image || placeholderImage
-     }');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div> 
-                                    <div class="desc">
-                                        <h3>${item.name}</h3>
-                                        <h4>₦${item.price}</h4>
-                                    </div>
-    `;
-      // items.appendChild(section);
-      Array.from(items).forEach((item) => {
-        const clone = section.cloneNode(true);
-        clone.addEventListener("click", section.onclick);
-        item.appendChild(clone);
+       
+        container.appendChild(clone);
       });
     });
   })
   .catch((err) => {
     console.error("Error fetching products");
   });
+
+  
 
 // ANIMATION FOR SIGN IN/UP PAGE (DESKTOP)
 

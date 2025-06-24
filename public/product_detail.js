@@ -19,7 +19,7 @@ image.style.background = `url('${item.image}')`;
 image.style.backgroundSize = 'cover';
 image.style.backgroundPosition = 'center';
 name.innerHTML = `${item.name}`;
-price.innerHTML = `${item.price}`;
+price.innerHTML = `₦${item.price}`;
 details.innerHTML = `${item.description}`
 
 })
